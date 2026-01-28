@@ -1,0 +1,28 @@
+image:
+  repository: acrfordevopspoc01adrian.azurecr.io/devops-project
+<<<<<<< HEAD
+  tag: "1.0.3"
+=======
+  tag: "1.0.3"
+>>>>>>> 281b2d2 (Run)
+  pullPolicy: IfNotPresent
+
+replicaCount: 1
+
+resources:
+  requests:
+    cpu: "100m"
+    memory: "256Mi"
+  limits:
+    cpu: "200m"
+    memory: "512Mi"
+
+env:
+  SPRING_PROFILES_ACTIVE: "test"
+  JAVA_OPTS: "-Xms256m -Xmx512m"
+
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 8080
+
