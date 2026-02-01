@@ -30,7 +30,7 @@ The `promote-to-prod` workflow automatically:
 3. Creates a Pull Request to PROD
 4. After PR merge → ArgoCD PROD performs rollout
 
-> **Note:** Workflow logic is defined in [ci-cd-templates/promote-environment.yml](https://github.com/devops-project-adrian-dmytryk/ci-cd-templates/blob/main/.github/workflows/promote-environment.yml)
+> **Note:** Workflow logic is defined in [ci-cd-templates/promote-environment.yml](https://github.com/Adrian-CICD-Project/ci-cd-templates/blob/main/.github/workflows/promote-environment.yml)
 
 ---
 
