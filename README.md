@@ -8,6 +8,9 @@ This repository contains the **TEST** environment configuration for applications
 |------|-------------|
 | `values/devops-project/values.yaml` | Application values for TEST |
 | `k8s/devops-project/` | Kubernetes manifests for TEST |
+| `k8s/adrian-java-app/` | Kubernetes manifests for adrian-java-app |
+
+> **Security:** All deployments include hardened `securityContext` (runAsNonRoot, readOnlyRootFilesystem, drop ALL capabilities).
 
 ---
 
