@@ -7,6 +7,10 @@ on:
       - "values/adrian-java-app/**"
   workflow_dispatch:
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   promote:
     uses: Adrian-CICD-Project/ci-cd-templates/.github/workflows/promote-environment.yml@main
@@ -16,4 +20,5 @@ jobs:
       target-env: prod
       target-repo: Adrian-CICD-Project/infrastructure-env-prod
       acr-repo: acrfordevopspoc01adrian.azurecr.io/adrian-java-app
-    secrets: inherit
+    secrets:
+      ENV_REPOS_TOKEN: ${{ secrets.ENV_REPOS_TOKEN }}
